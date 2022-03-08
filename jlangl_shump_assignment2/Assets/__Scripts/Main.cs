@@ -29,7 +29,7 @@ public class Main : MonoBehaviour
         // Position the Enemy above the screen with a random x position
         float enemyPadding = enemyDefaultPadding;
         if (go.GetComponent<BoundsCheck>() != null)
-        {                   // e
+        {                   
             enemyPadding = Mathf.Abs(go.GetComponent<BoundsCheck>().radius);
         }
 
@@ -42,7 +42,17 @@ public class Main : MonoBehaviour
         go.transform.position = pos;
 
         // Invoke SpawnEnemy() again
-        Invoke("SpawnEnemy", 1f / enemySpawnPerSecond);
+        Invoke("SpawnEnemy", 1f/enemySpawnPerSecond);
 
+    }
+
+    public void DelayedRestart(float delay)
+    {
+        Invoke("Restart", delay);
+    }
+    public void Restart()
+    {
+        //Reload scene 0
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }   

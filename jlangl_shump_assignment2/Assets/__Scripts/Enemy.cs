@@ -6,12 +6,13 @@ public class Enemy : MonoBehaviour
 {
 
     [Header("Set in the Unity Inspector")]
-    public float speed = 10f;      // The speed in m/s
+    public float speed = 20f;      // The speed in m/s
     public float fireRate = 0.3f;  // Seconds/shot (Unused)
     public float health = 10;
     public int score = 100;      // Points earned for destroying this
 
     private BoundsCheck bndCheck;
+    private Hero hero;
     private void Awake()
     {
         bndCheck = GetComponent<BoundsCheck>();
@@ -46,5 +47,15 @@ public class Enemy : MonoBehaviour
         tempPos.y -= speed * Time.deltaTime;
         pos = tempPos;
 
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        GameObject otherRootGo = collision.transform.root.gameObject;
+        if(otherRootGo.tag == "ProjectileHero")
+        {
+            Destroy(gameObject);
+        }
+        
     }
 }

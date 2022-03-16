@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":true,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":true,"pivot":{"x":-1.3019278049468995,"y":0.40971052646636965,"z":-10.135038375854493},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":13.182209968566895,"orthographic":true}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":true,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":true,"pivot":{"x":-6.467142105102539,"y":-0.8704109191894531,"z":-2.820880174636841},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":19.312143325805665,"orthographic":true}
+>>>>>>> parent of 2d6854c (Working Game)
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":true,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":true,"pivot":{"x":-6.467142105102539,"y":-0.8704109191894531,"z":-2.820880174636841},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":19.312143325805665,"orthographic":true}
 >>>>>>> parent of 2d6854c (Working Game)

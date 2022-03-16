@@ -114,6 +114,9 @@ GameObject:
 =======
   - component: {fileID: 7653904446211959567}
   - component: {fileID: 934523459743167165}
+<<<<<<< HEAD
+>>>>>>> parent of 2d6854c (Working Game)
+=======
 >>>>>>> parent of 2d6854c (Working Game)
   m_Layer: 0
   m_Name: Enemy_1

@@ -364,10 +364,13 @@ MonoBehaviour:
   rollMult: -45
   pitchMult: 30
 <<<<<<< HEAD
+<<<<<<< HEAD
   gameRestartDelay: 2
   projectilePrefab: {fileID: 7168222326932052364, guid: ab3c42352b74a488a86e3e6b7ca181de, type: 3}
   projectileSpeed: 150
 =======
+=======
+>>>>>>> parent of 2d6854c (Working Game)
   shieldLevel: 1
 >>>>>>> parent of 2d6854c (Working Game)
 --- !u!4 &495469727

@@ -121,6 +121,9 @@ GameObject:
   m_Layer: 0
   m_Name: Enemy_2
   m_TagString: Untagged
+<<<<<<< HEAD
+>>>>>>> parent of 2d6854c (Working Game)
+=======
 >>>>>>> parent of 2d6854c (Working Game)
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

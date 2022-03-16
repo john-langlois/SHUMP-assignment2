@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
@@ -50,6 +51,8 @@ TagManager:
     uniqueID: 0
     locked: 0
 =======
+=======
+>>>>>>> parent of 2d6854c (Working Game)
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
@@ -93,4 +96,7 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+<<<<<<< HEAD
+>>>>>>> parent of 2d6854c (Working Game)
+=======
 >>>>>>> parent of 2d6854c (Working Game)

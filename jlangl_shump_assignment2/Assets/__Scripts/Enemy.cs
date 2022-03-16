@@ -7,8 +7,11 @@ public class Enemy : MonoBehaviour
 
     [Header("Set in the Unity Inspector")]
 <<<<<<< HEAD
+<<<<<<< HEAD
     public float speed = 20f;      // The speed in m/s
 =======
+=======
+>>>>>>> parent of 2d6854c (Working Game)
     public float speed = 10f;      // The speed in m/s
     public float fireRate = 0.3f;  // Seconds/shot (Unused)
     public float health = 10;
@@ -43,7 +46,10 @@ public class Enemy : MonoBehaviour
 
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 2d6854c (Working Game)
 =======
 >>>>>>> parent of 2d6854c (Working Game)
 }

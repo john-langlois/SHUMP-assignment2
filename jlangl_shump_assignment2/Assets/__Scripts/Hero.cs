@@ -15,10 +15,13 @@ public class Hero : MonoBehaviour
     [Header("These fields are set dynamically")]
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     private GameObject lastTriggerGo = null;
 
     private float hitCount = 0;
 
+=======
+>>>>>>> parent of 2d6854c (Working Game)
 =======
 >>>>>>> parent of 2d6854c (Working Game)
     private void Awake()
@@ -43,6 +46,7 @@ public class Hero : MonoBehaviour
         //rotate ship for dynamic feel
 
         transform.rotation = Quaternion.Euler(yAxis * pitchMult, xAxis * rollMult, 0);
+<<<<<<< HEAD
 <<<<<<< HEAD
         DeadPlayer();
     
@@ -76,6 +80,9 @@ public class Hero : MonoBehaviour
             Main.S.DelayedRestart(gameRestartDelay);
         }
       
+=======
+
+>>>>>>> parent of 2d6854c (Working Game)
 =======
 
 >>>>>>> parent of 2d6854c (Working Game)

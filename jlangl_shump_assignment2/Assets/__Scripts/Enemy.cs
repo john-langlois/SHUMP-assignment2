@@ -6,13 +6,16 @@ public class Enemy : MonoBehaviour
 {
 
     [Header("Set in the Unity Inspector")]
+<<<<<<< HEAD
     public float speed = 20f;      // The speed in m/s
+=======
+    public float speed = 10f;      // The speed in m/s
     public float fireRate = 0.3f;  // Seconds/shot (Unused)
     public float health = 10;
     public int score = 100;      // Points earned for destroying this
+>>>>>>> parent of 2d6854c (Working Game)
 
     private BoundsCheck bndCheck;
-    private Hero hero;
     private void Awake()
     {
         bndCheck = GetComponent<BoundsCheck>();
@@ -29,18 +32,9 @@ public class Enemy : MonoBehaviour
         {
             this.transform.position = value;
         }
-    }   
-   
-    // Update is called once per frame
-    void Update()
-    {
-        Move();
-        if (bndCheck != null && bndCheck.offDown) {
-            //Check to make sure it went off the bottom of the screen
-            Destroy(gameObject);
-        }
     }
 
+    
     public virtual void Move()
     {
         Vector3 tempPos = pos;
@@ -48,14 +42,9 @@ public class Enemy : MonoBehaviour
         pos = tempPos;
 
     }
+<<<<<<< HEAD
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        GameObject otherRootGo = collision.transform.root.gameObject;
-        if(otherRootGo.tag == "ProjectileHero")
-        {
-            Destroy(gameObject);
-        }
-        
-    }
+=======
+>>>>>>> parent of 2d6854c (Working Game)
 }
+

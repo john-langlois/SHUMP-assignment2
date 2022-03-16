@@ -2,68 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-///     Keeps a GameObject on Screen
-///     Only works for orthographic Main Camera
-/// </summary>
-
 public class BoundsCheck : MonoBehaviour
 {
-    [Header("Set in Unity Inspector")]
-    public float radius = 1f;
-    public bool keepOnScreen = true;
-
-
-    [Header("set dynamically")]
-    public bool isOnScreen = true;
-    public float camWidth;
-    public float camHeight;
-
-    public bool offRight, offLeft, offUp, offDown;
-
-
-    // Start is called before the first frame update
-    void Start()
+    private void Update()
     {
-        camHeight = Camera.main.orthographicSize;
-        camWidth = camHeight * Camera.main.aspect;
-    }
 
-    // Update is called once per frame
-    void LateUpdate()
-    {
-        Vector3 pos = transform.position;
-        isOnScreen = true;
-        offRight = offLeft = offUp = offDown = false;
-        if (pos.x > camWidth - radius)
+        //Restricts movement to a specific boundary
+        transform.position = new Vector3
+            (
+            //x-coordinate
+            Mathf.Clamp(transform.position.x, -14f, -14f),
+            //y-coordinate
+            Mathf.Clamp(transform.position.y, -17f, 17f),
+            //z-coordinate
+            transform.position.z
+            );
+        //if enemy leaves the boundary position towards the bottom of the screen
+        //the enemy object is destroyed
+        if(this.transform.position.y <= -17f && this.tag == "enemy")
         {
-            pos.x = camWidth - radius;
-            offRight = true;
+            Destroy(this.gameObject);
         }
-        if (pos.x < -camWidth + radius)
-        {
-            pos.x = -camWidth + radius;
-            offLeft = true;
-        }
-
-        if (pos.y > camHeight - radius)
-        {
-            pos.y = camHeight - radius;
-            offUp = true;
-        }
-        if (pos.y < -camHeight + radius)
-        {
-            pos.y = -camHeight + radius;
-            offDown = true;
-        } 
-
-
-            isOnScreen = !(offRight || offLeft || offUp || offDown);
-
-            if (keepOnScreen && !isOnScreen)
-            {
-                transform.position = pos;
-                isOnScreen = true;
-            }
     }
 }
